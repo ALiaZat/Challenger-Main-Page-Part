@@ -4,11 +4,43 @@ body, html {
 }
 .root {
     --color-main: #650061;
+    --primary-color: #C13EA6;
+    --secondary-color:#9923AA;
 }
 .main-section {
     height: 100vh;
-    background: linear-gradient(90deg, #E958A2 0%,#C13EA6 ,#9923AA  100%);
+    background: linear-gradient(90deg, #E958A2 0%,--primary-color , --secondary-color  100%);
     display: flex;
+
+    .bar-color {
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        height: 40px;
+        margin: auto;
+        .choice {
+            align-items: center;
+            h1 {
+                font-size: 20px;
+                color:white;
+            }
+            .color-choose {
+                position: relative;
+                border-radius: 10px;
+                overflow: hidden;
+                height: 30px;
+                width: 30px;
+
+                input {
+                    position: absolute;
+                    height: 60px;
+                    width: 60px;
+                    border: none;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
 
     .content {
         display: flex;
@@ -20,6 +52,7 @@ body, html {
         height: 625px;
         flex-wrap: wrap;
         float: left;
+       
         h1 {
             color: white;
             font-size: 40px;
