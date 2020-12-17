@@ -1,0 +1,69 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-section {
+    height: 100vh;
+    background: linear-gradient(90deg, #E958A2 0%,#C13EA6 ,#9923AA  100%);
+    display: flex;
+
+    .content {
+        display: flex;
+        flex: 50%;
+        text-align: start;  
+        flex-direction: column;
+        align-items:center;
+        width: 500px;
+        height: 625px;
+        flex-wrap: wrap;
+        float: left;
+        h1 {
+            color: white;
+            font-size: 40px;
+            font-family: 'Open Sans', sans-serif;
+            text-align: start;
+        }
+        p {
+            color: #650061;
+            font-size: 25px;
+            font-family: 'Open Sans', sans-serif; 
+            text-align: start;
+        }
+        .actions {
+            a {
+                width: 200px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                color: #650061;
+                font-size: 20px;
+                font-family: 'Open Sans', sans-serif;
+                border: 1px solid white;  
+                border-radius: 20px; 
+                text-align: start; 
+                text-decoration: none;
+            }
+        }
+    }
+    .footer {
+        position: absolute;
+        bottom: 10px;
+        color: #650061;
+        padding: 0px 50px;
+    }
+    .pic-div {
+        position: absolute;
+        width: 100%;
+        height: 80%;
+        background-image: url('story.png');
+        background-size: 30%;
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+    }
+    
+}
