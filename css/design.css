@@ -17,6 +17,11 @@ body, html {
 }
 
 .main-section .content {
+  -webkit-box-flex: 70%;
+      -ms-flex: 70%;
+          flex: 70%;
+  padding-top: 20vh;
+  padding-left: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
